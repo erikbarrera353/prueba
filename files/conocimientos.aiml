@@ -20,36 +20,102 @@
 
 <!-- Consulta de Reservas -->
 <category>
-    <pattern>DISPONIBILIDAD</pattern>
+    <pattern>* DISPONIBILIDAD *</pattern>
     <template>Sí, actualmente tenemos habitaciones disponibles. ¿Para cuántas personas y en qué fechas estás interesado?</template>
 </category>
 
 <category>
-    <pattern>RESERVAR</pattern>
+    <pattern>* PERSONAS * </pattern>
+    <template>Vale. Verificando disponibildad</template>
+        <srai>*</srai>
+</category>
+
+<category>
+    <pattern>* DISPONIBILIDAD</pattern>
+    <template>Sí, actualmente tenemos habitaciones disponibles. ¿Para cuántas personas y en qué fechas estás interesado?</template>
+</category>
+
+<category>
+    <pattern>* PERSONAS * </pattern>
+    <template>Vale. Verificando disponibildad</template>
+        <srai>*</srai>
+</category>
+
+<category>
+    <pattern>* RESERVAR</pattern>
     <template>¡Perfecto! Para realizar una reserva, necesito saber la fecha de entrada, la fecha de salida y la cantidad de personas. ¿Puedes proporcionarme esa información?</template>
+</category>
+
+<category>
+    <pattern>* PERSONAS</pattern>
+    <template>Vale. Verificando disponibildad</template>
+        <srai>*</srai>
+</category>
+
+
+<category>
+    <pattern>* RESERVAR *</pattern>
+    <template>¡Perfecto! Para realizar una reserva, necesito saber la fecha de entrada, la fecha de salida y la cantidad de personas. ¿Puedes proporcionarme esa información?</template>
+</category>
+
+<category>
+    <pattern>* PERSONAS</pattern>
+    <template>Vale. Verificando disponibildad</template>
+        <srai>*</srai>
 </category>
 
 <!-- Consulta de Check-in -->
 <category>
-    <pattern>CHECK IN</pattern>
-    <template>El check-in es a partir de las 3:00 PM. ¿Hay algo más que necesites saber?</template>
+    <pattern>* CHECK IN</pattern>
+    <template>El check-in es a partir de las 3:00 PM.</template>
+    <srai>*</srai>
 </category>
 
 <category>
-    <pattern>CHECK OUT</pattern>
-    <template>El check-out es a las 11:00 AM. Si necesitas una salida tardía, por favor házmelo saber con antelación.</template>
+    <pattern>* CHECK IN * </pattern>
+    <template>El check-in es a partir de las 3:00 PM.</template>
+    <srai>*</srai>
+</category>
+
+<category>
+    <pattern>* CHECK OUT</pattern>
+    <template>El check-out es a las 11:00 AM. Si necesitas una salida tardía, por favor comunicate a recepción al XXXXXXX.</template>
+</category>
+
+<category>
+    <pattern>* CHECK OUT *</pattern>
+    <template>El check-out es a las 11:00 AM. Si necesitas una salida tardía, por favor comunicate a recepción al XXXXXXX.</template>
 </category>
 
 <!-- Consulta de Servicios -->
 <category>
-    <pattern>SERVICIOS</pattern>
+    <pattern>* SERVICIOS</pattern>
     <template>Ofrecemos una variedad de servicios, incluyendo Wi-Fi gratuito, servicio de habitaciones las 24 horas y un gimnasio. ¿Hay algo en particular que te interese?</template>
 </category>
 
-<!-- Consulta de Restaurante -->
 <category>
-    <pattern>RESTAURANTE</pattern>
+    <pattern>* RESTAURANTE</pattern>
     <template>Nuestro restaurante se encuentra en la planta baja, a la izquierda al salir del ascensor. ¿Te gustaría hacer una reserva para la cena?</template>
+</category>
+
+<category>
+    <pattern>* RESTAURANTE* </pattern>
+    <template>Nuestro restaurante se encuentra en la planta baja, a la izquierda al salir del ascensor. ¿Te gustaría hacer una reserva para la cena?</template>
+</category>
+
+<category>
+    <pattern>* SERVICIOS *</pattern>
+    <template>Ofrecemos una variedad de servicios, incluyendo Wi-Fi gratuito, servicio de habitaciones las 24 horas y un gimnasio. ¿Hay algo en particular que te interese?</template>
+</category>
+
+<category>
+    <pattern>* RESTAURANTE</pattern>
+    <template>Nuestro restaurante se encuentra en la planta baja, a la izquierda al salir del ascensor.</template>
+</category>
+
+<category>
+    <pattern>* RESTAURANTE* </pattern>
+    <template>Nuestro restaurante se encuentra en la planta baja, a la izquierda al salir del ascensor.</template>
 </category>
 
 <!-- Despedida -->
