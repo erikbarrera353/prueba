@@ -1,15 +1,50 @@
-<?xm1 version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-    <category>
-         <pattern>HOLA</pattern>
-         <template>Bienvenid@. ¿Quieres saber cuáles son las entradas o vamos a la sopa?</template>
-    </category>
-    <category>
+ 
+ <category>
+    <pattern>HOLA</pattern>
+    <template>
+        <random>
+            <li>Bienvenid@. ¿Quieres saber cuáles son las entradas o vamos a la sopa?</li>
+            <li>Buen día ¿toma entrada o empieza con la sopa?</li>
+            <li>Sea bienvenid@. ¿le digo las entradas o pasamos a la sopa?</li>
+            <li>Muy buen día ¿quiere saber las entradas o elige sopa de una vez?</li>
+        </random>
+    </template>
+  </category>
+  
+  <category>
     <pattern>ENTRADAS</pattern>
     <template>Tenemos palitos de apio, ensalada o fruta picada</template>
-    </category>
+  </category>
+  
+  <category>
+    <pattern>* ENTRADAS</pattern>
+    <template>
+          <srai>ENTRADAS</srai>
+    </template>
+  </category>
+  
     <category>
+    <pattern>* ENTRADAS *</pattern>
+    <template>
+          <srai>ENTRADAS</srai>
+    </template>
+  </category>
+  
+   <category>
     <pattern>SOPA</pattern>
     <template>¿Quieres sopa del día o consomé?</template>
-    </category>
+  </category>
+  
+    <category>
+        <pattern>SOPA DEL DÍA</pattern>
+        <template>Excelente elección. ¿Le traigo tortillas o pan?</template>
+  </category>
+  
+  <category>
+      <pattern> LA * ESTÁ FRÍA</pattern>
+      <template>Una enorme disculpa, llevo su <star/> a calentar</template>
+  </category>
+  
 </aiml>
