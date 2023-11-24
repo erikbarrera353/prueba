@@ -1,50 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
- 
- <category>
+
+<!-- Saludos -->
+<category>
     <pattern>HOLA</pattern>
+    <template>Bienvenido al Hotel. ¿En qué puedo ayudarte hoy?</template>
+</category>
+
+<category>
+    <pattern>*</pattern>
     <template>
         <random>
-            <li>Bienvenid@. ¿Quieres saber cuáles son las entradas o vamos a la sopa?</li>
-            <li>Buen día ¿toma entrada o empieza con la sopa?</li>
-            <li>Sea bienvenid@. ¿le digo las entradas o pasamos a la sopa?</li>
-            <li>Muy buen día ¿quiere saber las entradas o elige sopa de una vez?</li>
+            <li>Hola Bienvenido, ¿En qué puedo ayudarte?</li>
+            <li>Hola, como te ayudo</li>
+            <li>Bienvenido al Hotel, en que te ayudo</li>
         </random>
     </template>
-  </category>
-  
-  <category>
-    <pattern>ENTRADAS</pattern>
-    <template>Tenemos palitos de apio, ensalada o fruta picada</template>
-  </category>
-  
-  <category>
-    <pattern>* ENTRADAS</pattern>
-    <template>
-          <srai>ENTRADAS</srai>
-    </template>
-  </category>
-  
-    <category>
-    <pattern>* ENTRADAS *</pattern>
-    <template>
-          <srai>ENTRADAS</srai>
-    </template>
-  </category>
-  
-   <category>
-    <pattern>SOPA</pattern>
-    <template>¿Quieres sopa del día o consomé?</template>
-  </category>
-  
-    <category>
-        <pattern>SOPA DEL DÍA</pattern>
-        <template>Excelente elección. ¿Le traigo tortillas o pan?</template>
-  </category>
-  
-  <category>
-      <pattern> LA * ESTÁ FRÍA</pattern>
-      <template>Una enorme disculpa, llevo su <star/> a calentar</template>
-  </category>
-  
+</category>
+
+<!-- Consulta de Reservas -->
+<category>
+    <pattern>DISPONIBILIDAD</pattern>
+    <template>Sí, actualmente tenemos habitaciones disponibles. ¿Para cuántas personas y en qué fechas estás interesado?</template>
+</category>
+
+<category>
+    <pattern>RESERVAR</pattern>
+    <template>¡Perfecto! Para realizar una reserva, necesito saber la fecha de entrada, la fecha de salida y la cantidad de personas. ¿Puedes proporcionarme esa información?</template>
+</category>
+
+<!-- Consulta de Check-in -->
+<category>
+    <pattern>CHECK IN</pattern>
+    <template>El check-in es a partir de las 3:00 PM. ¿Hay algo más que necesites saber?</template>
+</category>
+
+<category>
+    <pattern>CHECK OUT</pattern>
+    <template>El check-out es a las 11:00 AM. Si necesitas una salida tardía, por favor házmelo saber con antelación.</template>
+</category>
+
+<!-- Consulta de Servicios -->
+<category>
+    <pattern>SERVICIOS</pattern>
+    <template>Ofrecemos una variedad de servicios, incluyendo Wi-Fi gratuito, servicio de habitaciones las 24 horas y un gimnasio. ¿Hay algo en particular que te interese?</template>
+</category>
+
+<!-- Consulta de Restaurante -->
+<category>
+    <pattern>RESTAURANTE</pattern>
+    <template>Nuestro restaurante se encuentra en la planta baja, a la izquierda al salir del ascensor. ¿Te gustaría hacer una reserva para la cena?</template>
+</category>
+
+<!-- Despedida -->
+<category>
+    <pattern>ADIOS</pattern>
+    <template>Gracias por elegir el Hotel. ¡Que tengas un día maravilloso!</template>
+</category>
+
+<category>
+    <pattern>HASTA LUEGO</pattern>
+    <template>¡Hasta luego! Si necesitas algo más, estamos aquí para ayudarte.</template>
+</category>
+
 </aiml>
